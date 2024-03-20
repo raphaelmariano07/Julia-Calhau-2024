@@ -1,21 +1,12 @@
 #include <stdio.h>
 #include <locale.h>
 
-int main (){
-    
-    int velocidade;
-    int distancia;
-    char nome_time[252];
-    
-    printf("Digite o nome do carro");
-    scanf("%s", nome_time);
-    
-    printf("Digite a distancia do carro:");
-    scanf("%d", &velocidade);
-    
-    printf("Digite a velocidade do carro: ");
-    scanf("%d", &distancia);
-    
-    printf("O tempo sera de %d horas!", velocidade/distancia);
+int main(){
+    setlocale(LC_ALL,"");
+    long long int x, y;
+    printf("Digite dois números inteiros:");
+    scanf("%lld %11d", &x, &y);
+    printf("O número %lld multiplicado por 4 bilhões é %lld", x, x * 4000000000);
+    printf("\n");
+    printf("O número %lld multiplicado por 4 bilhões é %lld", y, y * 4000000000);
     return 0;
-}
