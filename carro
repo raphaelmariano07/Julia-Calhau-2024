@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<locale.h>
+
+int main(){
+    
+      int velocidade;
+      int distancia;
+      char nome_time[252];
+      
+      printf("digite o nome do carro");
+      scanf("%s", nome_time);
+      
+      printf("digite a distancia do carro");
+      scanf("%d",&velocidade);
+      
+      printf("digite a velocidade do carro");
+      scanf("%d",&distancia);
+      
+      printf("o tempo sera %d horas!",velocidade /distancia);
+      return 0;
+}
