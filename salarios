@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main (){
+    int salario;
+    char nome_pessoa[252];
+    
+    printf("Digite o nome da pessoa: ");
+    scanf("%s", nome_pessoa);
+    
+    printf("Digite o salario dessa pessoa: R$");
+    scanf("%d", &salario);
+    
+    printf("O salario dessa pessoa depois do reajuste salarial sera de: R$%1.f", salario*0.05+salario);
+    return 0;
+    
+}
